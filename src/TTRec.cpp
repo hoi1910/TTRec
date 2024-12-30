@@ -1697,7 +1697,7 @@ bool CTTRec::GetChannel(int *pSpace, int *pChannel, WORD networkID, WORD service
 
     // networkIDがおかしなものを弾く(念の為)
     // http://www.arib.or.jp/tyosakenkyu/sakutei/img/sakutei3-07.pdf
-    if (!(0x0001 <= networkID && networkID <= 0x000A) && !(0x7880 <= networkID && networkID <= 0x7FEF)) {
+    if (!(0x0001 <= networkID && networkID <= 0x000B) && !(0x7880 <= networkID && networkID <= 0x7FEF)) {
         return false;
     }
 
